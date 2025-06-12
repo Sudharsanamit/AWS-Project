@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>To the Power of Math!</title>
+    <!-- Styling for the client UI -->
+    <style>
+    body {
+        background: #ffffff;
+        margin: 0;
+        overflow-x: hidden;
+        font-family: system-ui;
+    }
+
+    h1 {
+        color: #1b3b6f;
+        font-family: system-ui;
+        margin-left: 20px;
+        font-size: 36px;
+        padding-top: 30px;
+    }
+
+    label {
+        color: #1b3b6f;
+        font-family: system-ui;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    input {
+        color: #1b3b6f;
+        font-family: system-ui;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top: 20px;
+        width: 100px;
+        padding: 5px;
+        border: 2px solid #4682b4;
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: #4682b4;
+        border-color: #4682b4;
+        color: #ffffff;
+        font-family: system-ui;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 30px;
+        margin-top: 20px;
+        width: 140px;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #315f86;
+    }
+
+    .wave {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 200%;
+        height: 200px;
+        background: #1b3b6f;
+        border-radius: 50% 50% 0 0;
+        animation: waveAnimation 5s linear infinite;
+        z-index: -1;
+        transform: translateX(-50%);
+    }
+
+    @keyframes waveAnimation {
+        0% {
+            transform: translateX(-50%) translateY(0);
+        }
+        50% {
+            transform: translateX(-45%) translateY(10px);
+        }
+        100% {
+            transform: translateX(-50%) translateY(0);
+        }
+    }
+    </style>
+    <script>
+        // callAPI function that takes the base and exponent numbers as parameters
+        var callAPI = (base,exponent)=>{
+            // instantiate a headers object
+            var myHeaders = new Headers();
+            // add content type header to object
+            myHeaders.append("Content-Type", "application/json");
+            // using built in JSON utility package turn object to string and store in a variable
+            var raw = JSON.stringify({"base":base,"exponent":exponent});
+            // create a JSON object with parameters for API call and store in a variable
+            var requestOptions = {
+                method: 'POST',
+                headers: myHeaders,
+                body: raw,
+                redirect: 'follow'
+            };
+            // make API call with parameters and use promises to get response
+            fetch("https://bc92d15ite.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
+            .then(response => response.text())
+            .then(result => alert(JSON.parse(result).body))
+            .catch(error => console.log('error', error));
+        }
+    </script>
+</head>
+<body>
+    <h1>TO THE POWER OF MATH!</h1>
+    <form>
+        <label>Base number:</label>
+        <input type="text" id="base">
+        <label>...to the power of:</label>
+        <input type="text" id="exponent">
+        <!-- set button onClick method to call function we defined passing input values as parameters -->
+        <button type="button" onclick="callAPI(document.getElementById('base').value,document.getElementById('exponent').value)">CALCULATE</button>
+    </form>
+
+    <!-- Wave animation element -->
+    <div class="wave"></div>
+</body>
+</html>
