@@ -1,0 +1,32 @@
+{"timestamp":"2025-07-25T00:00:00Z","level":"CRITICAL","message":"Connection timeout"}
+{"timestamp":"2025-07-25T00:00:05Z","level":"CRITICAL","message":"Configuration error"}
+{"timestamp":"2025-07-25T00:00:10Z","level":"ERROR","message":"User not found"}
+{"timestamp":"2025-07-25T00:00:15Z","level":"INFO","message":"CPU temperature high"}
+{"timestamp":"2025-07-25T00:00:20Z","level":"CRITICAL","message":"File not found"}
+{"timestamp":"2025-07-25T00:00:25Z","level":"INFO","message":"Broken pipe"}
+{"timestamp":"2025-07-25T00:00:30Z","level":"INFO","message":"Segmentation fault"}
+{"timestamp":"2025-07-25T00:00:35Z","level":"ERROR","message":"CPU temperature high"}
+{"timestamp":"2025-07-25T00:00:40Z","level":"CRITICAL","message":"Out of memory"}
+{"timestamp":"2025-07-25T00:00:45Z","level":"CRITICAL","message":"File not found"}
+{"timestamp":"2025-07-25T00:00:50Z","level":"INFO","message":"User not found"}
+{"timestamp":"2025-07-25T00:00:55Z","level":"CRITICAL","message":"User not found"}
+{"timestamp":"2025-07-25T00:01:00Z","level":"WARNING","message":"Stack overflow"}
+{"timestamp":"2025-07-25T00:01:05Z","level":"WARNING","message":"Database connection lost"}
+{"timestamp":"2025-07-25T00:01:10Z","level":"WARNING","message":"Database connection lost"}
+{"timestamp":"2025-07-25T00:01:15Z","level":"ERROR","message":"Resource locked"}
+{"timestamp":"2025-07-25T00:01:20Z","level":"INFO","message":"Stack overflow"}
+{"timestamp":"2025-07-25T00:01:25Z","level":"CRITICAL","message":"File not found"}
+{"timestamp":"2025-07-25T00:01:30Z","level":"INFO","message":"Permission denied"}
+{"timestamp":"2025-07-25T00:01:35Z","level":"INFO","message":"Connection timeout"}
+{"timestamp":"2025-07-25T00:01:40Z","level":"CRITICAL","message":"Null pointer exception"}
+{"timestamp":"2025-07-25T00:01:45Z","level":"CRITICAL","message":"Failed authentication"}
+{"timestamp":"2025-07-25T00:01:50Z","level":"CRITICAL","message":"Connection timeout"}
+{"timestamp":"2025-07-25T00:01:55Z","level":"INFO","message":"Deadlock detected"}
+{"timestamp":"2025-07-25T00:02:00Z","level":"WARNING","message":"Database connection lost"}
+{"timestamp":"2025-07-25T00:02:05Z","level":"CRITICAL","message":"Permission denied"}
+{"timestamp":"2025-07-25T00:02:10Z","level":"INFO","message":"Service unavailable"}
+{"timestamp":"2025-07-25T00:02:15Z","level":"WARNING","message":"CPU temperature high"}
+{"timestamp":"2025-07-25T00:02:20Z","level":"CRITICAL","message":"Segmentation fault"}
+{"timestamp":"2025-07-25T00:02:25Z","level":"INFO","message":"Stack overflow"}
+","timestamp":"2025-07-25T00:02:30Z","level":"INFO","message":"Permission denied"}
+... (truncated)
