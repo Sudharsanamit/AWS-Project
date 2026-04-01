@@ -1,0 +1,19 @@
+✅ Phase 1: Prerequisites (LOCAL SETUP)
+Create frontend
+Create backend
+Test locally
+✅ Phase 2: AWS Network (VPC Setup ⚠️ CRITICAL)
+VPC
+Subnets
+Route tables
+Internet Gateway
+✅ Phase 3: Security (MOST COMMON FAILURE AREA ⚠️)
+Security Groups
+Inbound/Outbound rules
+✅ Phase 4: Database (RDS)
+✅ Phase 5: Backend Deployment (EC2)
+✅ Phase 6: Load Balancer + Target Group
+✅ Phase 7: Auto Scaling
+✅ Phase 8: Frontend Deployment (S3 + CloudFront)
+✅ Phase 9: Domain (Route 53)
+✅ Phase 10: Monitoring (CloudWatch)
