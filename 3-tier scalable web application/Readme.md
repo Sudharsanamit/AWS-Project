@@ -2,6 +2,8 @@
 
 ---
 
+![Architecture Diagram](https://github.com/Sudharsanamit/AWS-Project/blob/main/3-tier%20scalable%20web%20application/arch%20diagram.png)
+
 ## 📌 Project Overview
 
 This project demonstrates a **production-grade cloud architecture** built on AWS, implementing a **3-tier scalable web application** with:
