@@ -14,7 +14,7 @@ The system is designed using **loosely coupled, event-driven architecture**, ens
 Application → S3 → SNS → SQS → Lambda → DynamoDB + S3 → CloudWatch → SNS Alerts → Athena
 ```
 
-![Architecture Diagram](https://github.com/Sudharsanamit/AWS-Project/blob/main/serverless-incident-monitoring/arc%20dia.png)
+![Architecture Diagram](https://github.com/Sudharsanamit/AWS-Project/blob/main/serverless-incident-monitoring/architecture%20diagram.png)
 
 ### 🔍 Key Flow
 
