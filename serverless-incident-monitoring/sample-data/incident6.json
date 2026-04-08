@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-04-08T17:45:00Z",
+  "service": "database-cluster",
+  "level": "CRITICAL",
+  "message": "Storage capacity reached 99% - immediate action required",
+  "error_code": "DISK_FULL_ALARM",
+  "region": "ap-south-1"
+}

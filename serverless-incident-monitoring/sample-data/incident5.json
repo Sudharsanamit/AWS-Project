@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-04-08T13:00:00Z",
+  "service": "payment-service",
+  "level": "ERROR",
+  "message": "Transaction failed",
+  "error_code": "TXN_FAIL",
+  "region": "ap-south-1"
+}

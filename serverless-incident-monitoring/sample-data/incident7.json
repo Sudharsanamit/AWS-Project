@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-04-08T14:00:00Z",
+  "service": "payment-service",
+  "level": "CRITICAL",
+  "message": "Payment system down",
+  "error_code": "SYSTEM_DOWN",
+  "region": "ap-south-1"
+}
